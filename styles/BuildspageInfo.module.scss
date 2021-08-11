@@ -1,0 +1,29 @@
+.buildspageInfo {
+    background-color: #F3F3F3;
+    padding-top: 60px;
+    .container {
+        max-width: 1000px;
+        margin: 0 auto;
+        width: 90%;
+        h2 {
+            font-size: 40px;
+            text-transform: uppercase;
+            margin: 10px 0 30px;
+            @media (max-width: 1000px) {
+                font-size: 30px;                
+            }
+        }
+        div {
+            border-left: 5px solid #2d77b3;
+            padding: 0 0 0 15px;
+        
+            p {
+                font-size: 14px; 
+                line-height: 20px;
+                font-family: 'Spartan', sans-serif;
+                font-weight: 500;
+                margin-bottom: 0;
+            }
+        }
+    }
+}

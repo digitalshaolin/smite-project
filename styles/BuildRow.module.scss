@@ -1,0 +1,167 @@
+.buildRow {
+    margin: 20px 0;
+    box-shadow: rgba(50, 50, 93, 0.2) 0px 3px 8px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    .headerSection {
+        background-color: #2d77b3;
+        color: #fff;
+        padding: 8px 20px 4px;
+        font-size: 12px;
+        font-family: 'Spartan', sans-serif;
+        display: flex;
+        justify-content: space-between;
+        font-weight: 500;
+        .player {
+            p {
+                margin: 0;
+            }
+        }
+        .daysElapsed {
+            p {
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+        .gameMode {
+            p {
+                margin: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+    .contentSection {
+        background-color: #fff;
+        padding:20px 18px;
+        display: flex;
+        justify-content: space-between;     
+       
+        .godWrapper {
+            max-height: 64px;
+            display: flex;
+            padding: 0;
+            .godImage {
+                background-color: #f3f3f3;
+                height: 64px;
+                width: 64px;
+                position: relative;
+                margin: 0 2px;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+        }
+        .firstInfo {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 140px;
+            h3 {
+                font-size: 18px;
+                margin: 0;
+                font-weight: 500;
+            }
+            p {
+                font-size: 14px;
+                margin: 0;               
+                color: #3E4247;
+            }
+        }
+        .secondInfo {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            min-width: 90px;
+            h3 {
+                font-size: 18px;
+                font-weight: 500;
+                margin: 0;
+                span {
+                    color: red;
+                }
+            }
+            p {
+                font-size: 14px;
+                margin: 0;                
+                color: #3E4247;
+            }
+        }
+    }
+    @media (max-width: 1000px) {
+        .contentSection {
+            .actives {
+                flex-wrap: wrap;
+                width: 68px;
+                .active {
+                    margin: 0 2px 4px;
+                }
+            }
+            .godWrapper {
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                max-height: unset;
+            }
+        }
+    }
+    @media (max-width: 750px) {
+        .contentSection {
+            flex-wrap: wrap;
+            justify-content: stretch;
+            position: relative;
+            .godWrapper {
+                width: 20%;
+                justify-content: start;
+                align-items: start;
+            }
+            .firstInfo {
+                width: 50%;
+                min-width: unset;
+            }
+            .secondInfo {
+                width: 30%;
+                min-width: unset;
+                align-items: flex-end;
+            }
+            .actives {
+                margin-top: 20px;
+            }
+        }
+        .headerSection {
+            font-size: 10px;
+        }
+    }
+    @media (max-width: 400px) {
+        .contentSection {
+            .godWrapper {
+                width: 27%;
+            }
+            .actives {
+                .active {
+                    height: 50px;
+                    width: 50px;
+                }
+            }
+            .firstInfo {
+                width: 45%;
+                h3 {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+            .secondInfo {
+                width: 28%;
+                h3 {
+                    font-size: 14px;
+                }
+                p {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
